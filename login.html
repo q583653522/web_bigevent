@@ -20,7 +20,7 @@
       <!-- javascript:;是为了防止a标签的默认行为，即跳转到当前页面 -->
       <div class="login-box">
         <!-- 登录的表单 -->
-        <form class="layui-form" >
+        <form class="layui-form" id="form_login" >
           <!-- 用户名 -->
           <div class="layui-form-item">
             <i class="layui-icon layui-icon-username"></i>
@@ -51,10 +51,9 @@
           <div class="layui-form-item">
             <!-- 注意提交按钮和普通按钮的区别:有无lay-submit属性 -->
             <button
-              type="button"
               class="layui-btn layui-btn-fluid layui-btn-normal"
               lay-submit
-            >
+              lay-filter="formDemo">
               登录
             </button>
           </div>
@@ -127,6 +126,8 @@
     <script src="./assets/lib/layui/layui.all.js" ></script>
     <!-- 导入jQuery -->
     <script src="./assets/lib/jquery.js"></script>
+    <!-- 导入自己的封装的api文件 -->
+    <script src="./assets/js/baseApi.js"></script>
     <!-- 导入自己的javascript文件 -->
     <script src="./assets/js/login.js"></script>
   </body>
