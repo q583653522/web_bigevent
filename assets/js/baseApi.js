@@ -15,7 +15,7 @@ $.ajaxPrefilter(function (options) {
     //在 compltete回调函数中，可以使用res.responseJSON拿到服务器响应回来的数据。
     // console.log(res);
     if (
-      res.responseJSON.code === 1 &&
+      res.responseJSON.code == 1 &&
       res.responseJSON.message === "身份认证失败！"
     ) {
       // 1. 强制清空 token

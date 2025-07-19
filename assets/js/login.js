@@ -33,6 +33,7 @@ $(function () {
       }
     },
   });
+  
   //测试注册按钮点击事件
   $("#form_reg .layui-form-item .layui-btn").on("click", function () {
     var data = {
